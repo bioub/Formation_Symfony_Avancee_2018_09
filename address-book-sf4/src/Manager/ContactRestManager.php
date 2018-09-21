@@ -13,12 +13,12 @@ class ContactRestManager implements ContactManagerInterface
 
     /**
      * ContactRestManager constructor.
+     * @param \GuzzleHttp\Client $client
      */
-    public function __construct()
+    public function __construct(\GuzzleHttp\Client $client)
     {
-        $this->client = new \GuzzleHttp\Client();
+        $this->client = $client;
     }
-
 
     public function getAll()
     {

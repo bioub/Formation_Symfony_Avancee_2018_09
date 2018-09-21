@@ -9,7 +9,8 @@
 </head>
 <body>
 {{ include('top-menu.html.twig') }}
-{{ include('flash-alert.html.twig') }}
+{# {{ include('flash-alert.html.twig') }} #}
+{{ btspFlashAlert('success') }}
 <div class="container">
     {% block body %}{% endblock %}
 </div>

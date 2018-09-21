@@ -14,4 +14,7 @@ return [
     Symfony\Bundle\DebugBundle\DebugBundle::class => ['dev' => true, 'test' => true],
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
     Symfony\Bundle\WebServerBundle\WebServerBundle::class => ['dev' => true],
+    FormationTech\FixtureBundle\FormationTechGuzzleBundle::class => ['all' => true],
+    Openska\BootstrapBundle\OpenskaBootstrapBundle::class => ['all' => true],
+    FOS\UserBundle\FOSUserBundle::class => ['all' => true],
 ];

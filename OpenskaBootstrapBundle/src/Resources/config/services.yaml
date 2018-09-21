@@ -1,0 +1,6 @@
+services:
+  Openska\BootstrapBundle\Extension\AlertExtension:
+    class: Openska\BootstrapBundle\Extension\AlertExtension
+    arguments: ["@session.flash_bag"]
+    tags: ["twig.extension"]
+

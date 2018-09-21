@@ -6,6 +6,9 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "fabpot/goutte": "^3.2",
+        "formation-tech/guzzle-bundle": "^1.0",
+        "friendsofsymfony/user-bundle": "dev-master",
+        "openska/bootstrap-bundle": "dev-master",
         "sensio/framework-extra-bundle": "^5.1",
         "symfony/asset": "*",
         "symfony/console": "*",
@@ -76,5 +79,15 @@
             "allow-contrib": false,
             "require": "4.1.*"
         }
-    }
+    },
+    "repositories": [
+        {
+            "url": "../../FormationTechGuzzleBundle",
+            "type": "git"
+        },
+        {
+            "url": "../../OpenskaBootstrapBundle",
+            "type": "git"
+        }
+    ]
 }

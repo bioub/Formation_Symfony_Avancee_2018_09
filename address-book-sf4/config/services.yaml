@@ -32,3 +32,8 @@ services:
 
     App\Manager\ContactManagerInterface:
         alias: App\Manager\ContactDoctrineManager
+
+    App\Manager\ContactRestManager:
+        arguments:
+            - !service
+                class: GuzzleHttp\Client
