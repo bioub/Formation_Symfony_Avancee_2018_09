@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -34,6 +36,13 @@ class Company
      * @ORM\Column(name="city", type="string", length=50, nullable=true)
      */
     protected $city;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="post_code", type="string", length=10)
+     */
+    protected $postCode;
 
     /**
      *
@@ -146,5 +155,17 @@ class Company
     public function __toString()
     {
         return $this->name;
+    }
+
+    public function getPostCode(): ?string
+    {
+        return $this->postCode;
+    }
+
+    public function setPostCode(string $postCode): self
+    {
+        $this->postCode = $postCode;
+
+        return $this;
     }
 }

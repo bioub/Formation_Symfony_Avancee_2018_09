@@ -17,12 +17,12 @@ class ContactControllerTest extends WebTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        $mockRepo->expects($this->once())
+        $mockRepo->expects($this->exactly(1))
                  ->method('findAll')
                  ->willReturn([
                      (new Contact())->setId(1)->setFirstName('A')->setLastName('B'),
                      (new Contact())->setId(2)->setFirstName('C')->setLastName('D'),
-                    // (new Contact())->setId(3)->setFirstName('E')->setLastName('F'),
+                     // (new Contact())->setId(3)->setFirstName('E')->setLastName('F'),
                  ]);
 
         $mockDoctrine = $this->getMockBuilder(ManagerRegistry::class)

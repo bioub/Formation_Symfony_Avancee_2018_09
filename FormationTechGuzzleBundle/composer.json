@@ -1,0 +1,25 @@
+{
+    "name": "formation-tech/guzzle-bundle",
+    "version": "1.0.0",
+    "description": "Register Guzzle Client in the container",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romain Bohdanowicz",
+            "email": "romain.bohdanowicz@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FormationTech\\FixtureBundle\\": "src"
+        }
+    },
+    "require": {
+        "symfony/http-kernel": "^3.0|^4.0",
+        "symfony/dependency-injection": "^3.0|^4.0",
+        "symfony/config": "^3.0|^4.0",
+        "symfony/yaml": "^3.0|^4.0",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
